@@ -48,19 +48,7 @@
 }
 
 
-.headings{
-    font-family: century;
-    font-size: 3rem;
-    text-align: center;
-    margin: 40px 0 px;
-}
-.btn{
-    padding: 10px 35px;
-    background-color: transparent;
-    border: 1px solid gray;
-    color: gray;
-    outline: none;
-    transition: .6s ease;
-}
+
+
 
 
