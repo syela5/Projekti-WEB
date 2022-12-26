@@ -47,9 +47,18 @@
 
 }
 
-.home-text h1 h2{
+.home-text h1{
     font-size: x-large;
-    line-height: 1.2;
+    line-height: 1.0;
+    color: var(--big-color);
+    font-family: 'Righteous', cursive;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+
+}
+.home-text h2{
+    font-size: x-large;
+    line-height: 1.0;
     color: var(--big-color);
     font-family: 'Righteous', cursive;
     letter-spacing: 4px;
