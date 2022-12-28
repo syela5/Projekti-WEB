@@ -111,6 +111,7 @@
 .thum img{
     width: 100%;
     height:auto;
+    size: 15px;
 }
 .thum h3{
     position: absolute;
