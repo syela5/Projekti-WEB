@@ -1,17 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+/*Home*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins";
 }
-html {
-  scroll-behavior: smooth;
+.box {
+  padding: 1em;
+}
+.box:first-child .location {
+  padding: 0 1em;
 }
 .logo {
   font-family: "Poppins", sans-serif;
 }
+
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -48,76 +53,58 @@ html {
   box-shadow: 0 0 10px wheat;
 }
 
-#home {
-  position: relative;
+.body{
   width: 100%;
-  height: 100vh;
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
-    url(../img/img-1.jpg);
-  background-size: cover !important;
-  background-position: center !important;
-  display: grid;
-  grid-template-columns: repeat(1.1fr);
-  align-items: center;
-}
-.home-text {
-  margin-left: 2em;
-  color: #fff;
-}
-.home-text h1 {
-  font-family: "Poppins", cursive;
-  letter-spacing: 4px;
-}
-.home-text h2 {
-  font-family: "Poppins", cursive;
-  letter-spacing: 4px;
-}
-.home-text p {
-  color: black;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 38px;
-  margin-bottom: 50px;
-  line-height: 2.1;
-}
+	height: 90vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(../img/img1.jpg);
+	background-position: center;
+	background-size: cover;;
 
-.home-btn {
-  margin-top: 1em;
-  display: inline-block;
-  font-size: 16px;
-  padding: 15px 30px;
-  background: #ffffffbf;
-  border-radius: 4px;
-  transition: ease 0.4s;
-  text-decoration: none;
-  color: #000;
 }
-
-.home-btn:hover {
-  background: var(--bg-color);
+.heading{
+	width: 30%;
+	text-align: center;
+	color: #fff;
+}
+.heading h1{
+	font-size: 30px;
+  color: white;
+}
+.heading a{
+	text-decoration: none;
+	color: #000;
+	font-size: 15px;
+	font-weight: bold;
+	border-radius: 25px;
+	padding: 14px 50px;
+	background-color: #fff;
+}
+.heading a:hover{
   transform: scale(0.95);
-  box-shadow: 0 0 10px pink;
+  box-shadow: 0 0 10px rgb(247, 244, 239);
 }
-
-.title {
-  text-align: center;
-  padding-top: 2em;
+.tours{
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
 }
-.title h2 {
-  font-size: larger;
-  line-height: 1.2;
+.places{
+	display: inline;
+	text-align: center;
+	border-radius: 12px;
 }
 
 /* About us */
 
-/* Kodi Tringes */
 .about .row .content p {
   padding: 1em 0 !important;
 }
 .contact-bg {
   background-color: #333 !important;
 }
-/* Kodi Tringes End */
 .about {
   background-color: #f0e5e9;
 }
@@ -233,11 +220,6 @@ html {
 .fade {
   opacity: 0.5;
 }
-/* .destination-card:hover .cityName {
-  opacity: 1;
-  bottom: 1em;
-  left: 1em;
-} */
 .destination-card img {
   width: 100%;
   height: 100%;
@@ -250,17 +232,26 @@ html {
   transform: scale(1.5);
 }
 
-/* Pacage - content */
+/* Package section */
+.title{
+  font-size: 3em;
+  text-align: center;
+  padding: 1em;
+  margin: 0;
+}
 .package-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   grid-gap: 2rem;
   align-items: center;
   margin-top: 5rem;
+
+}
+.fade {
+  opacity: 0.5;
 }
 .thum {
   position: relative;
-  transition: all 0.3s cubic-bezier(0.455, 0.05, 0.55, 0.95);
   will-change: filter;
   cursor: pointer;
 }
@@ -284,13 +275,6 @@ html {
   padding-top: 24px;
 }
 
-/* Our Code */
-.box {
-  padding: 1em;
-}
-.box:first-child .location {
-  padding: 0 1em;
-}
 /* Contact us */
 * {
   box-sizing: border-box;
@@ -332,7 +316,7 @@ body {
 .line div:nth-child(3) {
   height: 3px;
   width: 70px;
-  background: #f7327a;
+  background: #8e32f7;
   border-radius: 5px;
 }
 .line {
@@ -342,7 +326,7 @@ body {
 .line div:nth-child(2) {
   width: 10px;
   height: 10px;
-  background: #f7327a;
+  background: #8e32f7;
   border-radius: 50%;
 }
 .text {
@@ -372,7 +356,7 @@ body {
 .contact-info span .fas {
   font-size: 2rem;
   padding-bottom: 0.9rem;
-  color: #f7327a;
+  color:#8e32f7;
 }
 .contact-info div span:nth-child(2) {
   font-weight: 500;
@@ -411,7 +395,7 @@ body {
   font-size: 1rem;
   text-transform: uppercase;
   color: #fff;
-  background: #f7327a;
+  background: #8e32f7;
   border: none;
   border-radius: 5px;
   padding: 0.7rem 1.5rem;
@@ -456,8 +440,8 @@ body {
   transition: all 0.4s ease;
 }
 .social-links a:hover {
-  color: #f7327a;
-  border-color: #f7327a;
+  color: #8e32f7;
+  border-color: #8e32f7;
 }
 
 /* media queries */
