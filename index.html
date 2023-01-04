@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TRAVEL -Welcome</title>
+    <title>TRAVEL - Welcome</title>
     <link rel="stylesheet" href="./css/style.css" />
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
   <body>
-   
     <nav class="navbar">
-      <h1 class="logo">TRAVEL AGENCY</h1>
-      <ul>
-        <li><a href="#top">Home</a></li>
-        <li><a href="#about">About us</a></li>
-        <li><a href="#destination">Destinations</a></li>
-        <li><a href="#">Package</a></li>
-        <li><a href="#contact">Contact us</a></li>
-        <li><a href="./pages/login.html">Login</a></li>
-      </ul>
-    </nav>
-     <!--Home-->
-    <section class="home" id="home">
-      <div class="home-text">
-        <h1>NEVER STOP</h1>
-        <h2>EXPLORING THE WORLD</h2>
-        <p1>Discover new destination with us!<br /></p1>
-        <a href="#" class="home-btn">EXPLORE</a>
-      </div>
-    </section>
-    <section>
-    <div></div>
-    </section>
+    <h1 class="logo">TRAVEL AGENCY</h1>
+    <ul>
+      <li><a href="#top">Home</a></li>
+      <li><a href="#about">About us</a></li>
+      <li><a href="#destination">Destinations</a></li>
+      <li><a href="#package">Package</a></li>
+      <li><a href="#contact">Contact us</a></li>
+      <li><a href="./pages/login.html">Login</a></li>
+    </ul>
+  </nav>
+<!--Home-->
+<div class="body">
+  <div class="heading">
+    <h1>Trust Our Excperience</h1><br>
+    <a href="#" class="heading">Get in touch</a>
+    </div>
+    <div class="tours">
+      <div class="places">
+        <img src="img/img2.jpg"style="width: 300px; height: 250px; border-radius: 12px;" >
+        <img src="img/img3.jpg"style="width: 300px; height: 250px; border-radius: 12px;" >
+      <img src="img/img5.jpg"style="width: 300px; height: 250px; border-radius: 12px;" >
+
+      
+    </div>
+    </div>
+  </div>
+
 
     <!-- About us -->
     <section class="about" id="about">
@@ -264,21 +268,4 @@
       </div>
      </section>
   </body>
-  <!-- kodi per slider ne home page -->
-  <script>
-    const homeImage = document.querySelector(".home");
-    const images = ["./img/img-1.jpg","./img/img-2.jpg","./img/img-3.jpg"];
-    let count = 0;
-    
-    setInterval(()=>{
-      if(count == images.length){
-        count = 0;
-        homeImage.style.background = `linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
-  url(${images[count++]})`;
-      }else{
-        homeImage.style.background = `linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
-  url(${images[count++]})`;
-      }
-    },6000)
-  </script> 
-</html>
+
