@@ -3,18 +3,19 @@
   <head>
     <title>TRAVEL -Welcome</title>
     <link rel="stylesheet" href="./css/style.css" />
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
   <body>
+   
     <nav class="navbar">
       <h1 class="logo">TRAVEL AGENCY</h1>
-
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Destinations</a></li>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#destination">Destinations</a></li>
         <li><a href="#">Package</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li><a href="#contact">Contact us</a></li>
         <li><a href="./pages/login.html">Login</a></li>
       </ul>
     </nav>
@@ -59,7 +60,7 @@
     <!-- About us -->
     <section class="about" id="about">
 
-     <h1 class="heading"> <span> About </span> us </h1>
+     <h1 class="heading"><span>About Us</span> </h1>
 
      <div class="row">
 
@@ -79,6 +80,99 @@
      </div>
 
     </section>
+    <!-- Destination Section -->
+    <section class="destination" id="destination">
+      <h1 class="destination-title">Our Most Popular Destination</h1>
+      <div class="column">
+        <div class="destination-card">
+          <img src="./img/barcelona.jpg" alt="">
+          <div class="cityName">
+            <h1>Barcelona</h1>
+            <h2>Spain</h2>
+          </div>
+          <div class="rating">
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star fade"></i>
+          </div>
+        </div>
+        <div class="destination-card">
+          <img src="./img/roma.jpeg" alt="">
+          <div class="cityName">
+            <h1>Rome</h1>
+            <h2>Italy</h2>
+          </div>
+          <div class="rating">
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+          </div>
+        </div>
+        <div class="destination-card">
+          <img src="./img/tokyo.jpg" alt="">
+          <div class="cityName">
+            <h1>Tokyo</h1>
+            <h2>Japan</h2>
+          </div>
+          <div class="rating">
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star fade"></i>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="destination-card">
+          <img src="./img/berlin.jpg" alt="">
+          <div class="cityName">
+            <h1>Berlin</h1>
+            <h2>Germany</h2>
+          </div>
+          <div class="rating">
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star fade"></i>
+            <i class="fa-sharp fa-solid fa-star fade"></i>
+          </div>
+        </div>
+        <div class="destination-card">
+          <img src="./img/Hawaii.jpg" alt="">
+          <div class="cityName">
+            <h1>Hawai</h1>
+            <h2>USA</h2>
+          </div>
+          <div class="rating">
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star fade"></i>
+          </div>
+        </div>
+        <div class="destination-card">
+          <img src="./img/istanbul.jpg" alt="">
+          <div class="cityName">
+            <h1>Istanbul</h1>
+            <h2>Turkey</h2>
+          </div>
+          <div class="rating">
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star"></i>
+            <i class="fa-sharp fa-solid fa-star fade"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <!--Package section-->
     <section class="package" id="package">
@@ -125,7 +219,7 @@
       </div>
     </section>
     <!--Contact Us section-->
-     <section class="contact=section">
+     <section class="contact=section" id="contact">
       <div class="contact-bg">
         <h3> Get in Touch with Us</h3>
         <h2>contact us</h2>
@@ -194,5 +288,22 @@
             <a href="#" class="fab fa-youtube"></a>
       </div>
      </section>
-  </body> 
+  </body>
+  <!-- kodi per slider ne home page -->
+  <script>
+    const homeImage = document.querySelector(".home");
+    const images = ["./img/img-1.jpg","./img/img-2.jpg","./img/img-3.jpg"];
+    let count = 0;
+    
+    setInterval(()=>{
+      if(count == images.length){
+        count = 0;
+        homeImage.style.background = `linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+  url(${images[count++]})`;
+      }else{
+        homeImage.style.background = `linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+  url(${images[count++]})`;
+      }
+    },6000)
+  </script> 
 </html>
