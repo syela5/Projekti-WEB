@@ -1,41 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>TRAVEL -Welcome</title>
+    <title>TRAVEL - Welcome</title>
     <link rel="stylesheet" href="./css/style.css" />
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
+<script src="js/slider.js"></script> 
+ </head>
   <body>
-   
     <nav class="navbar">
       <h1 class="logo">TRAVEL AGENCY</h1>
       <ul>
         <li><a href="#top">Home</a></li>
         <li><a href="#about">About us</a></li>
         <li><a href="#destination">Destinations</a></li>
-        <li><a href="#">Package</a></li>
+        <li><a href="#package">Package</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact us</a></li>
         <li><a href="./pages/login.html">Login</a></li>
       </ul>
     </nav>
-     <!--Home-->
-    <section class="home" id="home">
-      <div class="home-text">
-        <h1>NEVER STOP</h1>
-        <h2>EXPLORING THE WORLD</h2>
-        <p1>Discover new destination with us!<br /></p1>
-        <a href="#" class="home-btn">EXPLORE</a>
+  <!--Home section-->
+<div class="body">
+  <div class="heading">
+    <div class="weather-wrapper">
+      <div class="weather-top"><h1 class="weather-degree">28°</h1>
+      <ul>
+        <li>scattered</li>
+        <li>clouds</li>
+        <li>69%</li>
+        <li>humidity</li>
+        <li>wind:3m/s</li>
+        <li>SW</li>
+      </ul>
       </div>
-    </section>
-    <section>
-    <div></div>
-    </section>
-
-    <!-- About us -->
+      <div class="weather-bottom">
+        <ul>
+          <li>28° <span>WED</span></li>
+          <li>27° <span>THU</span></li>
+          <li>26° <span>FRI</span></li>
+          <li>25° <span>SAT</span></li>
+          <li>27° <span>SUN</span></li>
+        
+        </ul>
+      </div>
+    </div>
+    <h1>Trust Our Excperience</h1>
+    <a href="#" class="heading">Get in touch</a>
+    </div>
+    <div class="tours">
+      <div class="places">
+        <div class="image-wrapper">
+          <img src="img/t7.jpg" >
+        </div>
+        <div class="image-wrapper">
+          <img src="img/t10.jpg" >
+        </div>
+        <div class="image-wrapper">
+          <img src="img/t9.jpg" >
+        </div>
+    </div>
+    </div>
+  </div>
+    <!-- About us section-->
     <section class="about" id="about">
 
-     <h1 class="heading"><span>About Us</span> </h1>
+     <h1 class="heading tringa"><span>ABOUT US</span> </h1>
 
      <div class="row">
 
@@ -51,10 +81,51 @@
         <p>Our agency can assist you in defining what you want to receive out of your holiday. If anything goes wrong during your journey, you can count on us to help you. A travel agency like us will propose and make other travel plans, assist you in dealing with any travel emergencies, and connect you with the correct local individuals to meet your needs.</p>
         <a href="#" class="btn">Read more</a>
       </div>
+    </section>
+     <!-- About us Pjesa 2-->
+    <section id="facts" class="py-4 flex">
+      <div class="container">
+        <div class="title-wrap">
+          <span class="sm-title">Know some facts
+             about our agency</span>
+           
 
-     </div>
+        </div>
+        <div class="facts-row">
+            <div class="facts-item">
+              <span class="fas fa-camera-retro facts-icon"></span>
+                <div class="fact-info">
+                  <strong>3000</strong>
+                   <p class="text">photes taken</p>
+               </div>
+            </div>
+            <div class="facts-item">
+              <span class="fas fa-umbrella-beach
+              facts-icon"></span>
+                <div class="fact-info">
+                  <strong>403</strong>
+                   <p class="text">beaches visited</p>
+               </div>
+            </div>
+            <div class="facts-item">
+              <span class="fas fa-mountain facts-icon"></span>
+                <div class="fact-info">
+                  <strong>80</strong>
+                   <p class="text">mountains climbed</p>
+               </div>
+            </div>
+            <div class="facts-item">
+              <span class="fas fa-ship facts-icon"></span>
+                <div class="fact-info">
+                  <strong>150</strong>
+                   <p class="text">cruises organized</p>
+               </div>
+            </div>
+        </div>
+      </div>
 
     </section>
+
     <!-- Destination Section -->
     <section class="destination" id="destination">
       <h1 class="destination-title">Our Most Popular Destination</h1>
@@ -150,50 +221,263 @@
 
 
     <!--Package section-->
-    <section class="package" id="package">
-      <div class="title">
-        <h2>Our Upcoming<br />Tour Package</h2>
+    <section class="packages" id="package">
+
+      <h1 class="heading">
+          <span>P</span>
+          <span>A</span>
+          <span>C</span>
+          <span>K</span>
+          <span>A</span>
+          <span>G</span>
+          <span>E</span>
+          <span>S</span>
+      </h1>
+  
+      <div class="box-container">
+  
+          <div class="box">
+              <img src="./img/img-2.jpg" alt="">
+              <div class="content">
+                  <h3> <i class="fas fa-map-marker-alt"></i> Dubrovnik, Croatia </h3>
+                  <p>Dubrovnik has top-notch food & wine.There's adventure around every corner.The coastline is postcard-worthy. ...</p>
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                  </div>
+                  <div class="price"> $90.00 <span>$120.00</span> </div>
+                  <a href="#" class="btn">book now</a>
+              </div>
+          </div>
+  
+          <div class="box">
+              <img src="./img/imgg3.jpg" alt="">
+              <div class="content">
+                  <h3> <i class="fas fa-map-marker-alt"></i> Venice, Italy </h3>
+                  <p>Some of the most influential sights of Venice are the grand canals, exquisite palaces, and the luxurious main square of San Marco.</p>
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                  </div>
+                  <div class="price"> $120.00 <span>$160.00</span> </div>
+                  <a href="#" class="btn">book now</a>
+              </div>
+          </div>
+  
+          <div class="box">
+              <img src="./img/imgg4.jpg" alt="">
+              <div class="content">
+                  <h3> <i class="fas fa-map-marker-alt"></i> Chefchaouen, Morocco </h3>
+                  <p>The endless blue walls.Everything is within walking distance. Chaouen has a rich history.</p>
+                  <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                  </div>
+                  <div class="price"> $100.00 <span>$140.00</span> </div>
+                  <a href="#" class="btn">book now</a>
+              </div>
+          </div>
+          <div class="box">
+            <img src="./img/imgg5.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Chiang Mai, Thailand</h3>
+                <p>It's a cool mountain town known for its hill tribes, lush rainforests, elephant sanctuaries, and interesting cuisine.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $190.00 <span>$210.00</span> </div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+        <div class="box">
+          <img src="./img/imgg6.jpg" alt="">
+          <div class="content">
+              <h3> <i class="fas fa-map-marker-alt"></i> Kyoto, Japan</h3>
+              <p>Tour more than 1,600 Buddhist temples.Visit more than 400 colourful shrines.See the large collection of World Heritage Sites.</p>
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+              </div>
+              <div class="price"> $200.00 <span>$230.00</span> </div>
+              <a href="#" class="btn">book now</a>
+          </div>
       </div>
-      <div class="package-content">
-        <div class="box">
-          <div class="thum">
-            <img src="./img/Paris.jpg" />
-            <h3>$499</h3>
-          </div>
-          <div class="dest-content">
-            <div class="location">
-              <h4>Paris</h4>
-              <p>4h - 5h</p>
+      <div class="box">
+        <img src="./img/imgg7.jpg" alt="">
+        <div class="content">
+            <h3> <i class="fas fa-map-marker-alt"></i> Rome, Italy</h3>
+            <p>Rome is a fabulous mix of history, archeology, art, religion and religious culture and delicious food.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
             </div>
-          </div>
+            <div class="price"> $170.00 <span>$190.00</span> </div>
+            <a href="#" class="btn">book now</a>
         </div>
-        <div class="box">
-          <div class="thum">
-            <img src="./img/london.jpg" />
-            <h3>$400</h3>
-          </div>
-          <div class="dest-content">
-            <div class="location">
-              <h4>London</h4>
-              <p>8h - 4h</p>
+    </div>
+
+        </div>
+
+      </section>
+
+      <!-- services section  -->
+      <section class="services" id="services">
+
+        <h1 class="heading">
+            <span>S</span>
+            <span>E</span>
+            <span>R</span>
+            <span>V</span>
+            <span>I</span>
+            <span>C</span>
+            <span>E</span>
+            <span>S</span>
+        </h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>affordable hotels</h3>
             </div>
-          </div>
-        </div>
-        <div class="box">
-          <div class="thum">
-            <img src="./img/Santorini.jpg" />
-            <h3>$399</h3>
-          </div>
-          <div class="dest-content">
-            <div class="location">
-              <h4>Santorini</h4>
-              <p>4h - 5h</p>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>food and drinks</h3>
             </div>
-          </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>safty guide</h3>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>around the world</h3>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>fastest travel</h3>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>adventures</h3>
+            </div>
+    
         </div>
-      </div>
+    
     </section>
-    <!--Contact Us section-->
+
+<!-- gallery section  -->
+
+<section class="gallery" id="gallery">
+
+  <h1 class="heading">
+      <span>G</span>
+      <span>A</span>
+      <span>L</span>
+      <span>L</span>
+      <span>E</span>
+      <span>R</span>
+      <span>Y</span>
+  </h1>
+
+  <div class="box-container">
+
+      <div class="box">
+          <img src="./img/d1.jpg" alt="">
+          <div class="content">
+              <h3>Lisbon, Portugal</h3>
+              <p>This pastel-colored city on the Iberian sea is full of visual wonders...</p>
+              <a href="#" class="btn">see more</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="./img/d2.jpg" alt="">
+          <div class="content">
+              <h3>New York City</h3>
+              <p>The New York City skyline never fails to stun, no matter how many times you see it...</p>
+              <a href="#" class="btn">see more</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="./img/d3.jpg" alt="">
+          <div class="content">
+              <h3>Muscat, Oman</h3>
+              <p>Bordered by Saudi Arabia, Yemen, United Arab Emirates...</p>
+              <a href="#" class="btn">see more</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="./img/d4.jpg" alt="">
+          <div class="content">
+              <h3>Venice, Italy</h3>
+              <p>Whether it feels like you have the place to yourself or...</p>
+              <a href="#" class="btn">see more</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="./img/d5.jpg" alt="">
+          <div class="content">
+              <h3>Cape Town, South Africa</h3>
+              <p>Cape Town is the perfect city destination for anyone...</p>
+              <a href="#" class="btn">see more</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="./img/d6.jpg" alt="">
+          <div class="content">
+              <h3>Budapest, Hungary</h3>
+              <p>This Eastern European gem is full of romantic cafés...</p>
+              <a href="#" class="btn">see more</a>
+          </div>
+      </div>
+      <div class="box">
+          <img src="./img/d7.jpg" alt="">
+          <div class="content">
+              <h3>Jaipur, India</h3>
+              <p>From this mesmerizing coral structure known as Hawa Mahal...</p>
+              <a href="#" class="btn">see more</a>
+          </div>
+      </div>
+      <div class="box">
+        <img src="./img/d8.jpg" alt="">
+        <div class="content">
+            <h3>San Miguel de Allende</h3>
+            <p>With colorfully painted buildings lining into the hilly...</p>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+      <div class="box">
+          <img src="./img/d9.jpg" alt="">
+          <div class="content">
+              <h3>Marrakech, Morocco</h3>
+              <p>If you're looking for an adventure, add the Red City to your list...</p>
+              <a href="#" class="btn">see more</a>
+          </div>
+      </div>
+
+  </div>
+
+</section>
+    
+<!--Contact Us section-->
      <section class="contact=section" id="contact">
       <div class="contact-bg">
         <h3> Get in Touch with Us</h3>
@@ -228,29 +512,7 @@
       <span class="text">Monday - Friday (9:00 AM to 5:00 PM)</span>
       </div>
         </div>
-        <div class="contact-form">
-          <form>
-            <div>
-              <input type="text" class="form-control"
-              placeholder="First Name">
-               <input type="text" class="form-control"
-              placeholder="Last Name">
-            </div>
-            <div>
-              <input type="email" class="form-control"
-              placeholder="E-mail">
-             <input type="text" class="form-control"
-              placeholder="Phone">
-            </div>
-            <textarea rows="5" placeholder="Message" class="form-control"></textarea>
-            <br>
-            <input type="submit" class="send-btn" value="send message">
-            </form>
-            <div>
-              <img src="img/contact-png.png">
-            </div>
-        </div>
-      </div>
+        
       <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111849.85500052052!2d-97.04588579584106!3d28.829689806626998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864266db2e2dac3b%3A0xeee20d566f63267d!2sViktoria%2C%20Texas%2C%20Shtetet%20e%20Bashkuara%20t%C3%AB%20Amerik%C3%ABs!5e0!3m2!1ssq!2s!4v1672396332690!5m2!1ssq!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
@@ -263,22 +525,6 @@
             <a href="#" class="fab fa-youtube"></a>
       </div>
      </section>
+     <script src="js/slider.js"></script>
   </body>
-  <!-- kodi per slider ne home page -->
-  <script>
-    const homeImage = document.querySelector(".home");
-    const images = ["./img/img-1.jpg","./img/img-2.jpg","./img/img-3.jpg"];
-    let count = 0;
-    
-    setInterval(()=>{
-      if(count == images.length){
-        count = 0;
-        homeImage.style.background = `linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
-  url(${images[count++]})`;
-      }else{
-        homeImage.style.background = `linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
-  url(${images[count++]})`;
-      }
-    },6000)
-  </script> 
-</html>
+  </html>
