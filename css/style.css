@@ -112,13 +112,10 @@ padding: 10px;
 }
 .body{
   width: 100%;
-
   height: 100vh;
   display: flex;
   padding-top: 10vh;
 
-  height: 90vh;
-  display: flex;
   justify-content: space-around;
   align-items: center;
   background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(../img/t1.jpg);
@@ -168,17 +165,21 @@ display: inline;
 /* refix of places section in homepage  */
 .image-wrapper{
 
-  width: 370px;
-  height: 270px;
+  width: 300px;
+  height: 250px;
   background-color: #fff;
-  padding: 1em 1em 2.5em 1em;
   margin: 1em;
+  overflow: hidden;
 }
 .image-wrapper img{
+  padding: 1em;
+
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: contrast(120%);
+  filter: contrast(120%) ;
+
+  transform: scale(1.1);
 }
  
 
