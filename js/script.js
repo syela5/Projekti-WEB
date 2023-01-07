@@ -27,10 +27,12 @@ function validateLoginForm() {
 		document.getElementById("errorMsg").innerHTML = "Your password must include atleast 8 characters"
 		return false;
 	}
-    else if (password.length < 8) {
-		document.getElementById("errorMsg").innerHTML = "Your password must include atleast 8 characters"
-		return false;
-	}
+	else if(!pwd_expression.test(password))
+		{
+			document.getElementById("errorMsg").innerHTML =('Upper case, Lower case, Special character and Numeric letter are required in Password filed');
+            return false;
+		}
+    
 	else {
 		alert("Successfully logged in");
 		return true;
