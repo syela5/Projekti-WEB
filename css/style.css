@@ -58,7 +58,7 @@
   align-items: center;
   background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(../img/img1.jpg);
   background-position: center;
-  background-size: cover;;
+  background-size: cover;
 
 }
 .heading{
@@ -93,8 +93,6 @@
   text-align: center;
   border-radius: 12px;
 }
-
-
 
 /* About us */
 
@@ -445,7 +443,7 @@ body {
 
 /* media queries */
 @media screen and (min-width: 768px) {
-  .contact-bg .text {
+  .contact-bg .text{
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -453,7 +451,9 @@ body {
   .contact-info {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
   }
+
 }
 @media screen and (min-width: 992px) {
   .contact-bg .text {
@@ -475,3 +475,5 @@ body {
     font-size: 3rem;
   }
 }
+
+
