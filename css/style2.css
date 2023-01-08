@@ -24,7 +24,7 @@ body{
 .box img{
 	width:95px;
     margin-top:-50px ;
-    border-radius: 50%;a
+    border-radius: 50%;
 }
 
 .header {
@@ -36,7 +36,6 @@ body{
     padding-bottom: 0;
 	justify-content: space-between;
 }
-
 .header a {
     font-size: 20px;
     text-decoration: none;
