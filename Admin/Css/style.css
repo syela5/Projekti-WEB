@@ -174,7 +174,7 @@ section{
 
 .form-container{
    min-height: 100vh;
-   background-image:url(../../img/PhotoRegister.jpg);
+   background: url(../../img/PhotoRegister.jpg) no-repeat;
    display: flex;
    align-items: center;
    justify-content: center;
