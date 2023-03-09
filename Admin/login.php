@@ -1,21 +1,18 @@
 <?php
-
+//idhja me databaze
 include '../Config/dbconnect.php';
 session_start();
 
 if(isset($_POST['submit'])){
 
-   $email = $_POST['email'];
-   $pass = md5($_POST['password']);
+   $email = mysqli_real_escape_string($conn, $_POST['email']);
+   $pass = mysqli_real_escape_string($conn, md5($_POST['password']));
 
-   $select_users = $conn->prepare("SELECT * FROM `users` WHERE email = :email AND password = :pass");
-   $select_users->bindParam(':email', $email);
-   $select_users->bindParam(':pass', $pass);
-   $select_users->execute();
+   $select_users = mysqli_query($conn, "SELECT * FROM `users` WHERE email = '$email' AND password = '$pass'") or die('query failed');
 
-   if($select_users->rowCount() > 0){
+   if(mysqli_num_rows($select_users) > 0){
 
-      $row = $select_users->fetch(PDO::FETCH_ASSOC);
+      $row = mysqli_fetch_assoc($select_users);
 
       if($row['user_type'] == 'admin'){
 
@@ -34,9 +31,11 @@ if(isset($_POST['submit'])){
       }
 
    }else{
-      $message[] = 'incorrect email or password!';
+      $message[] = 'Email ose Passwodi gabim!';
    }
+
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -76,7 +75,7 @@ if(isset($message)){
       <input type="email" name="email" placeholder="Email" required class="box">
       <input type="password" name="password" placeholder="Password" required class="box">
       <input type="submit" name="submit" value="login now" class="btn">
-      <p>I'm New Here <br> <a href="register.php">Signup now</a></p>
+      <p>Im New Here <br> <a href="register.php">Signup now</a></p>
    </form>
 
 </div>
