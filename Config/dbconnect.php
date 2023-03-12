@@ -1,7 +1,9 @@
-
 <?php
-// Lidhja me databaze
 
-$conn = mysqli_connect('localhost','root','','travel_db') or die('connection failed');
+$db_name = "mysql:host=localhost;dbname=traveling_db";
+$username = "root";
+$password = "";
+
+$conn = new PDO($db_name, $username, $password);
 
 ?>
