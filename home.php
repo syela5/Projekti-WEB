@@ -73,9 +73,115 @@
 
 </section>
 
+<!-- services section starts  -->
+
+<section class="services">
+
+   <h1 class="heading-title"> our services </h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="img/icon-1.png" alt="">
+         <h3>adventure</h3>
+      </div>
+
+      <div class="box">
+         <img src="img/icon-2.png" alt="">
+         <h3>tour guide</h3>
+      </div>
+
+      <div class="box">
+         <img src="img/icon-3.png" alt="">
+         <h3>trekking</h3>
+      </div>
+
+      <div class="box">
+         <img src="img/icon-4.png" alt="">
+         <h3>camp fire</h3>
+      </div>
+
+      <div class="box">
+         <img src="img/icon-5.png" alt="">
+         <h3>off road</h3>
+      </div>
+
+      <div class="box">
+         <img src="img/icon-6.png" alt="">
+         <h3>camping</h3>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- home about section starts  -->
+
+<section class="home-about">
+
+   <div class="image">
+      <img src="img/111.webp" alt="">
+   </div>
+
+   <div class="content">
+      <h3>about us</h3>
+      <p>Your Time Is Valuable, And You Should Not Have To Waste It Looking For The Perfect Holiday.Our Travel Agency Can Help You With That...</p>
+      <a href="about.php" class="btn">read more</a>
+   </div>
+
+</section>
+
+<!-- home about section ends -->
+<!--home contact starts-->
+<section class="home-contact">
+
+   <div class="content">
+      <h3>have any questions?</h3>
+      <p>"If you need assistance or have any questions about your travels, don't hesitate to contact us. We're here to help!"</p>
+      <a href="contact.php" class="btn">contact us</a>
+   </div>
+
+</section>
+<!--home contact ends-->
 
 
+<!-- footer section starts  -->
 
+<section class="footer">
+   <div class="box-container">
+      <div class="box">
+         <h3>quick links</h3>
+         <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
+         <a href="about.php"> <i class="fas fa-angle-right"></i> about</a>
+         <a href="package.php"> <i class="fas fa-angle-right"></i> package</a>
+         <a href="book.php"> <i class="fas fa-angle-right"></i> book</a>
+      </div>
+      <div class="box">
+         <h3>extra links</h3>
+         <a href="#"> <i class="fas fa-angle-right"></i> ask questions</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> about us</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> privacy policy</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> terms of use</a>
+      </div>
+      <div class="box">
+         <h3>contact info</h3>
+         <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+         <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+         <a href="#"> <i class="fas fa-envelope"></i> user@gmail.com </a>
+         <a href="#"> <i class="fas fa-map"></i> Prishtine, Kosova - 10130
+ </a>
+      </div>
+      <div class="box">
+         <h3>follow us</h3>
+         <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+         <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+         <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+         <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+      </div>
+   </div>
+   <div class="credit"> created by <span>web designer</span> | all rights reserved! </div>
+</section>
+<!-- footer section ends -->
 
 
 
